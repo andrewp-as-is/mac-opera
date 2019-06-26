@@ -1,0 +1,32 @@
+{
+  "name": "mac-opera",
+  "version": "2019.6.23",
+  "description": "macOS Opera.app scripts",
+  "keywords": [
+    "opera"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/mac-opera",
+  "license": "Unlicense",
+  "bin": {
+    ".opera-close.applescript": "./scripts/.opera-close.applescript",
+    ".opera-fullscreen-detect.applescript": "./scripts/.opera-fullscreen-detect.applescript",
+    ".opera-fullscreen-enter.applescript": "./scripts/.opera-fullscreen-enter.applescript",
+    ".opera-fullscreen-exit.applescript": "./scripts/.opera-fullscreen-exit.applescript",
+    ".opera-open.applescript": "./scripts/.opera-open.applescript",
+    ".opera-refresh.applescript": "./scripts/.opera-refresh.applescript",
+    ".opera-url.applescript": "./scripts/.opera-url.applescript",
+    ".opera-urls.applescript": "./scripts/.opera-urls.applescript",
+    "opera": "./scripts/opera",
+    "opera-close": "./scripts/opera-close",
+    "opera-frontmost": "./scripts/opera-frontmost",
+    "opera-fullscreen-detect": "./scripts/opera-fullscreen-detect",
+    "opera-fullscreen-enter": "./scripts/opera-fullscreen-enter",
+    "opera-fullscreen-exit": "./scripts/opera-fullscreen-exit",
+    "opera-kill": "./scripts/opera-kill",
+    "opera-open": "./scripts/opera-open",
+    "opera-pid": "./scripts/opera-pid",
+    "opera-refresh": "./scripts/opera-refresh",
+    "opera-url": "./scripts/opera-url",
+    "opera-urls": "./scripts/opera-urls"
+  }
+}
