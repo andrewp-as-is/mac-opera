@@ -9,7 +9,7 @@ usage() {
 
 [[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
 
-pid="$(opera pid)" || exit
+pid="$(opera-pid)" || exit
 [[ -z "$pid" ]] && exit
 
 osascript "${BASH_SOURCE[0]%/*}"/."${BASH_SOURCE[0]##*/}".applescript "$@"

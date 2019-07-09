@@ -26,6 +26,7 @@ command|`usage`
 [`opera-fullscreen-detect`](# "print 1 if 'Opera.app' is in fullscreen mode, else 0") |`usage: opera-fullscreen-detect`
 [`opera-fullscreen-enter`](# "enter fullscreen mode") |`usage: opera-fullscreen-enter`
 [`opera-fullscreen-exit`](# "exit fullscreen mode") |`usage: opera-fullscreen-exit`
+[`opera-isready`](# "print 1 if Opera is active and ready, else 0") |`usage: opera-isready timeout`
 [`opera-kill`](# "list tabs with playing audio") |`usage: opera-kill`
 [`opera-open`](# "open url(s)") |`usage: opera-open url ...`
 [`opera-pid`](# "print 'Opera.app' pid") |`usage: opera-pid`
@@ -61,6 +62,15 @@ frontmost (`1` or `0`)
 ```bash
 $ opera frontmost
 0
+```
+
+`Opera.app` process
+```bash
+$ opera pid
+42
+$ opera isready 5 # timeout 5 seconds
+1
+$ opera kill
 ```
 
 <p align="center">

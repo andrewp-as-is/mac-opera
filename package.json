@@ -1,6 +1,6 @@
 {
   "name": "mac-opera",
-  "version": "2019.6.23",
+  "version": "2019.7.9",
   "description": "macOS Opera.app scripts",
   "keywords": [
     "opera"
@@ -12,6 +12,7 @@
     ".opera-fullscreen-detect.applescript": "./scripts/.opera-fullscreen-detect.applescript",
     ".opera-fullscreen-enter.applescript": "./scripts/.opera-fullscreen-enter.applescript",
     ".opera-fullscreen-exit.applescript": "./scripts/.opera-fullscreen-exit.applescript",
+    ".opera-isready.applescript": "./scripts/.opera-isready.applescript",
     ".opera-open.applescript": "./scripts/.opera-open.applescript",
     ".opera-refresh.applescript": "./scripts/.opera-refresh.applescript",
     ".opera-url.applescript": "./scripts/.opera-url.applescript",
@@ -22,6 +23,7 @@
     "opera-fullscreen-detect": "./scripts/opera-fullscreen-detect",
     "opera-fullscreen-enter": "./scripts/opera-fullscreen-enter",
     "opera-fullscreen-exit": "./scripts/opera-fullscreen-exit",
+    "opera-isready": "./scripts/opera-isready",
     "opera-kill": "./scripts/opera-kill",
     "opera-open": "./scripts/opera-open",
     "opera-pid": "./scripts/opera-pid",

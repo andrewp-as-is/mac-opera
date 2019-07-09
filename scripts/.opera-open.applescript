@@ -1,7 +1,10 @@
 #!/usr/bin/osascript
 
+property _TIMEOUT_APP: 10
+
 on run argv
   try
+    with timeout of _TIMEOUT_APP seconds
     repeat with _arg_url in argv
       set _exists to false
       tell application "Opera"
@@ -19,15 +22,12 @@ on run argv
             end timeout
           end repeat
         end repeat
-        if _exists is false then
-          open location _arg_url
-        end if
+        if (_exists is false) then open location _arg_url
       end tell
     end repeat
   on error errorMessage number errorNumber
-    if (errorNumber is equal to -609) --Connection is invalid
-      return
-    end if
+    --Connection is invalid. (-609)
+    if (errorNumber is in {-609}) then return
     error errorMessage number errorNumber
   end try
 end run
