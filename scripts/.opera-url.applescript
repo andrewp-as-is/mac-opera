@@ -1,14 +1,14 @@
 #!/usr/bin/osascript
 
-property _TIMEOUT_APP: 2
-property _TIMEOUT_TAB: 2
-
 try
-  with timeout of _TIMEOUT_APP seconds
+  set _APP_TIMEOUT to 5
+  if ("OPERA_TIMEOUT" is in system attribute) then
+    set _APP_TIMEOUT to (system attribute "OPERA_TIMEOUT") as integer
+  end if
+
+  with timeout of _APP_TIMEOUT seconds
     tell application "Opera"
-      with timeout of _TIMEOUT_TAB seconds
-        if count of windows is not 0 then return URL of active tab of first window
-      end timeout
+      if count of windows is not 0 then return URL of active tab of first window
     end tell
   end timeout
 on error errorMessage number errorNumber

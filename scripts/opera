@@ -13,14 +13,15 @@ Available commands:
     url                     active tab url
     urls                    list of urls
 
-    fullscreen-detect       return true/false if fullscreen active
+    fullscreen-detect       print 1 if 'Opera.app' is frontmost, else 0
     fullscreen-enter        enter fullscreen
     fullscreen-exit         exit fullscreen
 
     frontmost               print 1 if 'Opera.app' is frontmost, else 0
 
-    kill                    kill Chrome Google.app process
-    pid                     Chrome Google.app pid
+    isready                 print 1 if Opera is ready, else 0
+    kill                    kill Opera.app process
+    pid                     Opera.app pid
 
 run \`$(basename $0) COMMAND --help\` for more infos
 EOF

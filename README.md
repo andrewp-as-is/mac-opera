@@ -17,6 +17,11 @@ $ [sudo] npm i -g mac-opera
 $ [sudo] pip install mac-opera
 ```
 
+#### Config
+```bash
+$ export OPERA_TIMEOUT=10 # 5 by default
+```
+
 #### Scripts usage
 command|`usage`
 -|-

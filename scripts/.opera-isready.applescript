@@ -2,8 +2,8 @@
 
 on run argv
   try
-    set _TIMEOUT_APP to (item 1 of argv)
-    with timeout of _TIMEOUT_APP seconds
+    set OPERA_TIMEOUT to (item 1 of argv)
+    with timeout of OPERA_TIMEOUT seconds
       tell application "Opera"
         repeat with w in  every window
           repeat with t in every tab in w
